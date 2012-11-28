@@ -4,6 +4,7 @@ class AddPosts < ActiveRecord::Migration
       t.string :title
       t.text :content
       t.timestamps
+      t.text :slug
     end
   end
 end
