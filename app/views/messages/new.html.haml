@@ -1,6 +1,6 @@
 = simple_form_for @message do |f|
   = f.input :email
-  = f.input :title
-  = f.input :content, as: :text
+  = f.input :title, label: "Subject"
+  = f.input :content, as: :text, input_html: { rows: 10 }, label: "Message"
 
-  = f.submit
+  = f.submit "Send Message", class: "btn btn-primary"

@@ -1,3 +1,3 @@
 $(function() {
-  $('#post_content').wysihtml5();
+  $('.html-editor').wysihtml5();
 });

@@ -1,4 +1,8 @@
 - @posts.each do |post|
   .post
-    = link_to post.title, post
-    = raw post.content
+    %h2
+      = link_to post.title, post
+      - if admin_signed_in?
+        = link_to " (edit)", edit_post_path(post)
+    %p.post-date= post.updated_at.strftime("%B %e, %Y")
+    %p.post-content= raw post.content
