@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Mike Odmark
+    %meta{ name: "viewport", content: "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" }
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+%body
+  .container
+    %header
+      %nav
+        %ul
+          %li= link_to "Blog", admin_signed_in? ? admin_posts_path : posts_path
+          %li= link_to "Info", "#"
+          %li.logo
+            = link_to root_path do
+              = image_tag "logo.png"
+          %li= link_to "Work", "#"
+          %li= link_to "Contact", "#"
+      = yield
+
+    %footer
+      - if admin_signed_in?
+        %li
+          = link_to "Sign out", destroy_admin_session_path, method: :delete
+      - else
+        %li
+          = link_to "Sign in", new_admin_session_path

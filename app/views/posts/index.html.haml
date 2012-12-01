@@ -1,2 +1,4 @@
 - @posts.each do |post|
-  = link_to post.title, post
+  .post
+    = link_to post.title, post
+    = raw post.content
