@@ -25,6 +25,13 @@
         = image_tag "div.png"
 
       %section#content
+        - [:success, :alert, :error].each do |level|
+          - unless flash[level].blank?
+            .alert{ class: level }
+              %a.close{ href: "#", data: { dismiss: "alert" } }
+                = image_tag "icons/x.png"
+              = flash[level]
+
         = yield
 
       #footer-push
