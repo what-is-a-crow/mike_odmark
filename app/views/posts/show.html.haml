@@ -1,2 +1,4 @@
-%h1= @post.title
-%p.post-content= raw @post.content
+.post
+  %p.post-date= @post.updated_at.strftime("%B %e, %Y")
+  %h1= @post.title
+  %p.post-content= raw @post.content
