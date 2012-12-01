@@ -1,4 +1,4 @@
-= simple_form_for @info do |f|
+= simple_form_for @info, url: info_path(@info) do |f|
   = f.input :content, as: :text, input_html: { class: "html-editor" }
   = f.submit class: "btn btn-primary"
   = link_to "Cancel", info_path, class: "btn"
