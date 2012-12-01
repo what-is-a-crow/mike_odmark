@@ -1,4 +1,4 @@
-= simple_form_for @work, url: work_path(@work) do |f|
+= simple_form_for @work, url: work_path(@work), method: "PUT" do |f|
   = f.input :content, as: :text, input_html: { class: "html-editor" }
   = f.submit class: "btn btn-primary"
   = link_to "Cancel", work_path, class: "btn"
