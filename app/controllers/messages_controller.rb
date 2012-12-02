@@ -11,6 +11,7 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     if @message.valid?
       ApplicationMailer.contact(@message)
+      flash[:success] = "Message sent successfully."
       redirect_to root_path
     else
       render :new
