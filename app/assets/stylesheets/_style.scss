@@ -24,3 +24,14 @@ abbr[title] {
     width: 100%;
   }
 }
+
+.photo {
+  padding: 1px;
+  border: solid 1px $charcoal;
+  border-radius: 5px;
+  display: inline-block;
+
+  img {
+    border-radius: 3px;
+  }
+}
