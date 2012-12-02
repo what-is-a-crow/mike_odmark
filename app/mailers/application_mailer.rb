@@ -3,7 +3,7 @@ class ApplicationMailer < ActionMailer::Base
 
   def contact(form)
     @form = form
-    email = mail(to: "egoodberry@gmail.com", subject: "MikeOdmark.com Contact Form Submitted")
+    email = mail(to: "mjodmark@me.com", subject: "MikeOdmark.com Contact Form Submitted")
     email.deliver
   end
 end
