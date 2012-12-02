@@ -1,4 +1,8 @@
 class InfoController < ApplicationController
+  before_filter do
+    @current_page = "Info"
+  end
+
   def show
     @content = Info.first_or_create.content
   end

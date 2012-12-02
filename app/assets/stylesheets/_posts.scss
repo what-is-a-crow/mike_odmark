@@ -1,7 +1,24 @@
 .post {
-  .post-date {
-    color: $lightGray;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  .post-header {
+    @extend .clearfix;
+    margin-bottom: 5px;
+
+    h1, h2 {
+      display: inline;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    .post-date {
+      color: $lightGray;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
   }
+
+  .post-content {
+    line-height: 25px;
+  }
+
+  margin-bottom: 40px;
 }

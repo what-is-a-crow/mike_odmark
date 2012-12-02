@@ -1,4 +1,8 @@
 class MessagesController < ApplicationController
+  before_filter do
+    @current_page = "Contact"
+  end
+
   def new
     @message = Message.new
   end

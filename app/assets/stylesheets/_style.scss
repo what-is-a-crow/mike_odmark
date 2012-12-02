@@ -1,3 +1,11 @@
+h1, h2, h3, h4 {
+  font-family: $headerFont;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 abbr[title] {
   cursor: default;
   border: none;
@@ -5,4 +13,10 @@ abbr[title] {
 
 .html-editor {
   width: 570px;
+}
+
+#contact {
+  input[type=text], input[type=email], textarea {
+    width: 100%;
+  }
 }

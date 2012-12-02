@@ -1,4 +1,8 @@
 class WorkController < ApplicationController
+  before_filter do
+    @current_page = "Work"
+  end
+
   def show
     @content = Work.first_or_create.content
   end

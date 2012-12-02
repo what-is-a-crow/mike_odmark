@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
   before_filter :authenticate_admin!, except: [:index, :show]
+  before_filter do
+    @current_page = "Blog"
+  end
 
   def index
     @posts = Post.all
