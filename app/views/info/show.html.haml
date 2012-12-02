@@ -2,6 +2,6 @@
   .span7
     - if admin_signed_in?
       %p= link_to "Edit Info", edit_info_path, class: "btn btn-primary"
-    = raw(@content)
+    .html-output= raw(@content)
   .span4.offset1
     = image_tag "pages/info.jpg"

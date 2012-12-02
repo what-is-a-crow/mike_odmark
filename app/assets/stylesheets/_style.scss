@@ -15,6 +15,10 @@ abbr[title] {
   width: 570px;
 }
 
+.html-output {
+  line-height: $contentLineHeight;
+}
+
 #contact {
   input[type=text], input[type=email], textarea {
     width: 100%;
