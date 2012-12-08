@@ -22,7 +22,8 @@
                 = image_tag "logo.png"
             = nav_link "Work", work_path, @current_page
             = nav_link "Contact", new_message_path, @current_page
-        = image_tag "div.png"
+        .wave
+          = image_tag "div.png"
 
       %section#content
         - [:success, :alert, :error].each do |level|

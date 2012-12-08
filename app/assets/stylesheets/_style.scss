@@ -2,8 +2,14 @@ h1, h2, h3, h4 {
   font-family: $headerFont;
 }
 
-a:hover {
+a {
+  color: $charcoal;
   text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 abbr[title] {
@@ -37,5 +43,20 @@ abbr[title] {
 
   img {
     border-radius: 3px;
+  }
+}
+
+.yay {
+  background: #000;
+}
+
+.clearfix {
+  &:before, &:after {
+    content:"";
+    display:table;
+  }
+
+  &:after {
+    clear:both;
   }
 }

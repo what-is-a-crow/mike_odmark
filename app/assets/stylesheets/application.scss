@@ -9,7 +9,9 @@
 @import "constants";
 
 @import "bootstrap";
-@import "bootstrap-responsive";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/responsive-768px-979px";
+@import "bootstrap/responsive-767px-max";
 @import "bootstrap-wysihtml5";
 
 @import "style";
