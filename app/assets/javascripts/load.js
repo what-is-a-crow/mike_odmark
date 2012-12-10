@@ -8,8 +8,8 @@ $(function() {
             "src":"url"
           },
           "set_attributes": {
-            "width": "560",
-            "height": "315",
+            "width": "46",
+            "height": "23",
             "frameborder": "0",
             "allowfullscreen": ""
           }
