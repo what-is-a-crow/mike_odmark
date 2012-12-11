@@ -7,8 +7,9 @@ module ApplicationHelper
     end
   end
 
-  def photo file_name
-    content_tag(:span, class: "photo") do
+  def photo file_name, options = {}
+    classes = "photo " + (options[:class] || "")
+    content_tag(:span, class: classes) do
       image_tag "pages/#{file_name}.jpg", title: "All rights reserved ©#{Date.today.year}."
     end
   end

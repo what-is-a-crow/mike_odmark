@@ -21,6 +21,9 @@ $(function() {
   });
 
   $('.html-output img').each(function() {
-    $(this).wrap('<span class="photo">');
+    img = $(this);
+    if (img.parents('.photo').size() < 1) {
+      img.wrap('<span class="photo">');
+    }
   });
 });

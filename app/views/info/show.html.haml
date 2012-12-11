@@ -1,7 +1,5 @@
-.row
-  .span5
-    - if admin_signed_in?
-      %p= link_to "Edit Info", edit_info_path, class: "btn btn-primary"
-    .html-output= raw(@content)
-  .span6.offset1
-    = photo "info"
+- if admin_signed_in?
+  %p= link_to "Edit Info", edit_info_path, class: "btn btn-primary"
+.html-output.clearfix
+  = photo "info", class: "right"
+  = raw(@content)

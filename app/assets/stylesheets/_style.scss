@@ -1,5 +1,7 @@
 h1, h2, h3, h4 {
   font-family: $headerFont;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 a {
@@ -46,10 +48,6 @@ abbr[title] {
   }
 }
 
-.yay {
-  background: #000;
-}
-
 .clearfix {
   &:before, &:after {
     content:"";
@@ -59,4 +57,9 @@ abbr[title] {
   &:after {
     clear:both;
   }
+}
+
+.right {
+  float: right;
+  margin: 0 0 20px 50px;
 }
