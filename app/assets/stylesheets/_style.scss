@@ -37,6 +37,12 @@ abbr[title] {
   text-align: center;
 }
 
+#work {
+  iframe {
+    vertical-align: middle;
+  }
+}
+
 .photo {
   padding: 1px;
   border: solid 1px $charcoal;
