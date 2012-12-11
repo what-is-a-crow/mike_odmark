@@ -25,6 +25,23 @@ abbr[title] {
 
 .html-output {
   line-height: $contentLineHeight;
+
+  li {
+    list-style: none;
+    line-height: 25px;
+
+    &:before {
+      content:'\2022';
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -13px;
+      top: -1px;
+      color: $charcoal;
+      font-size: 14px;
+    }
+  }
 }
 
 #contact {

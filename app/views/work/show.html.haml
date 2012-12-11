@@ -4,4 +4,4 @@
   .span6.offset1
     - if admin_signed_in?
       %p= link_to "Edit Work", edit_work_path, class: "btn btn-primary"
-    = raw(@content)
+    .html-output= raw(@content)
